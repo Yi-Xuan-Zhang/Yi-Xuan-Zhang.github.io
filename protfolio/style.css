@@ -85,13 +85,13 @@ nav {
 
 .tag {
     background: #dbeafe;
-    color: #2563eb;
+    color: #5E8B7E;
     padding: 10px 20px;
     border-radius: 30px;
 }
 
 .btn {
-    background: #2563eb;
+    background: #5E8B7E;
     color: white;
     text-decoration: none;
     padding: 12px 30px;
@@ -101,8 +101,8 @@ nav {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    border: 2px solid #5E8B7E;
+    color: #5E8B7E;
 }
 
 .about-content {
@@ -143,7 +143,7 @@ nav {
 .bar span {
     display: block;
     height: 100%;
-    background: #2563eb;
+    background: #5E8B7E;
     border-radius: 20px;
 }
 
@@ -177,7 +177,7 @@ nav {
 
 .project-btns a {
     text-decoration: none;
-    background: #2563eb;
+    background: #5E8B7E;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
