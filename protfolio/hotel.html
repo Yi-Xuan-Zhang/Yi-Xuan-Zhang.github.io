@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>飯店訂房網站 — 張宜軒作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav>
+    <div class="logo">宜軒<span class="dot">.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menu-btn" aria-label="開啟選單" aria-expanded="false">☰</button>
+  </nav>
+
+  <!-- Case study hero -->
+  <header class="detail-hero">
+    <a href="index.html#projects" class="back-link">← 返回作品集</a>
+    <span class="tag">✦ Case Study 02</span>
+    <h1>飯店訂房網站</h1>
+    <p class="detail-subtitle">房型瀏覽、日期選擇、總價計算、訂房送出的一站式訂房流程</p>
+  </header>
+
+  <!-- Overview meta -->
+  <section class="detail-overview">
+    <div class="info-grid">
+      <div class="info-card card-mustard">
+        <h3>角色</h3>
+        <p>前端開發<br>獨立完成</p>
+      </div>
+      <div class="info-card card-dark">
+        <h3>開發時間</h3>
+        <p>2 週<br>2025</p>
+      </div>
+      <div class="info-card card-dark">
+        <h3>使用工具</h3>
+        <p>HTML / CSS<br>JavaScript</p>
+      </div>
+      <div class="info-card card-mustard">
+        <h3>專案連結</h3>
+        <p><a href="https://Yi-Xuan-Zhang.github.io/hotel-booking/">Live Demo</a><br>
+          <a href="https://github.com/Yi-Xuan-Zhang/hotel-booking">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cover image -->
+  <section class="detail-cover">
+    <img src="image/hotel-home.png" alt="飯店訂房網站首頁截圖">
+  </section>
+
+  <!-- Overview text -->
+  <section class="hello">
+    <div class="hello-inner">
+      <div class="hello-text" style="max-width:900px;">
+        <p class="eyebrow">✦ Overview</p>
+        <h2 class="script">專案<em>簡介</em></h2>
+        <p>
+          這個專案模擬真實訂房網站的核心流程，訪客可以瀏覽不同房型、
+          選擇入住與退房日期、即時看到總價計算結果，並完成訂房送出。
+          目標是練習表單邏輯、日期運算與資料驗證，同時做出符合實際使用情境的響應式介面。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 跑馬燈分隔 -->
+  <div class="marquee-banner" aria-hidden="true">
+    <div class="marquee-track">
+      <span>HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ </span>
+      <span>HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ </span>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="projects">
+    <h2>功能亮點</h2>
+
+    <div class="project-block">
+      <div class="project-media"><img src="image/hotel-home.png" alt="房型列表畫面"></div>
+      <div class="project-info">
+        <span class="project-num">01</span>
+        <h3>房型列表</h3>
+        <p>依房型分類呈現卡片式列表，每張卡片顯示房型圖片、坪數、可容納人數與每晚價格，方便訪客快速比較。</p>
+        <div class="tools-row">
+          <span class="tool-tag">CSS Grid</span>
+          <span class="tool-tag">Responsive</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-media"><img src="image/hotel-home.png" alt="日期選擇與總價計算畫面"></div>
+      <div class="project-info">
+        <span class="project-num">02</span>
+        <h3>日期選擇與總價計算</h3>
+        <p>訪客選擇入住與退房日期後，系統自動計算住宿天數與總價，並即時顯示在畫面上，避免訪客手動換算。</p>
+        <div class="tools-row">
+          <span class="tool-tag">JavaScript Date</span>
+          <span class="tool-tag">即時運算</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-media"><img src="image/hotel-home.png" alt="訂房表單送出畫面"></div>
+      <div class="project-info">
+        <span class="project-num">03</span>
+        <h3>訂房送出與驗證</h3>
+        <p>表單送出前檢查必填欄位與日期邏輯（退房日期需晚於入住日期），並在錯誤時提示訪客修正，確保資料正確才送出。</p>
+        <div class="tools-row">
+          <span class="tool-tag">表單驗證</span>
+          <span class="tool-tag">錯誤提示</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next project -->
+  <section id="contact" class="contact">
+    <p class="eyebrow eyebrow-light">✦ Next</p>
+    <h2 class="thankyou">看更多作品</h2>
+    <div class="contact-info">
+      <p>回到作品集查看其他專案</p>
+    </div>
+    <a href="index.html#projects" class="btn btn-lg">返回 Projects</a>
+  </section>
+
+  <footer>
+    © 2026 張宜軒 Portfolio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

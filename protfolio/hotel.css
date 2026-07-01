@@ -1,0 +1,66 @@
+
+/* ---------- Detail page (case study) ---------- */
+.detail-hero {
+    background: var(--green);
+    color: var(--cream);
+    text-align: center;
+    padding: 160px 8% 100px;
+}
+ 
+.back-link {
+    display: inline-block;
+    color: var(--cream);
+    text-decoration: none;
+    opacity: 0.75;
+    margin-bottom: 24px;
+    transition: opacity 0.2s;
+}
+ 
+.back-link:hover {
+    opacity: 1;
+}
+ 
+.detail-hero .tag {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+ 
+.detail-hero h1 {
+    font-family: var(--font-headline);
+    font-weight: 900;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin-bottom: 20px;
+}
+ 
+.detail-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+ 
+.detail-overview {
+    background: var(--cream);
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+ 
+.detail-cover {
+    padding: 60px 8%;
+    background: var(--cream);
+}
+ 
+.detail-cover img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+ 
+.info-card a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+ 

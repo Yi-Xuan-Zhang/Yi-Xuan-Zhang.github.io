@@ -3,147 +3,210 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>張宜軒的作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
 
 <body>
-  <!-- navbar -->
+  <!-- Nav -->
   <nav>
-    <div class="logo">Yi-Xuan</div>
-    <ul class="nav-links">
-      <li><a href="#home">首頁</a></li>
-      <li><a href="#about">關於我</a></li>
-      <li><a href="#skills">技能</a></li>
-      <li><a href="#projects">作品</a></li>
-      <li><a href="#contact">聯絡我</a></li>
+    <div class="logo">宜軒<span class="dot">.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="menu-btn" id="menu-btn">
-      ☰
-    </div>
+    <button class="menu-btn" id="menu-btn" aria-label="開啟選單" aria-expanded="false">☰</button>
   </nav>
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <span class="tag">Front-End Developer</span>
 
-      <h1>Hi, I'm <br>張宜軒</h1>
-      <p>
-        熱愛網頁設計與前端開發，
-        喜歡將想法轉化為實際作品，
-        持續學習並精進自己的技術能力。
-      </p>
-      <a href="#projects" class="btn">查看作品</a>
-      <a href="#contact" class="btn btn-outline">聯絡我</a>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-marquee" aria-hidden="true">
+      <span>PORTFOLIO</span>
+      <span class="outline">PORTFOLIO</span>
+      <span>PORTFOLIO</span>
     </div>
-    <div class="hero-img">
-      <img src="./image/profile.JPG" alt="">
+    <div class="hero-inner">
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="./image/profile.JPG" alt="張宜軒">
+      </div>
+      <div class="hero-caption">
+        <span class="tag">✦ Front-End Developer</span>
+        <h1>張宜軒</h1>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="./image/畢業照.JPG" alt="">
-      <div>
+  <!-- Hello / About -->
+  <section class="hello" id="about">
+    <div class="hello-inner">
+      <img class="hello-photo" src="./image/畢業照.JPG" alt="張宜軒的畢業照">
+      <div class="hello-text">
+        <p class="eyebrow">✦ Hello</p>
+        <h2 class="script">我是<em>宜軒</em></h2>
         <p>
-          目前專注於前端網站開發，
-          熟悉 HTML、CSS、JavaScript，
+          熱愛網頁設計與前端開發，喜歡將想法轉化為實際作品。
+          目前專注於前端網站開發，熟悉 HTML、CSS、JavaScript，
           並持續學習 React 與 API 串接。
         </p>
-        <ul>
-          <li>學歷：國立臺北大學 歷史學系</li>
-          <li>年齡：26 歲</li>
-          <li>地區：臺灣</li>
-          <li>Email：a0919874693@gmail.com</li>
-          <li>興趣：</li>
-          <li>求職方向：</li>
-        </ul>
+        <div class="cta-group">
+          <a href="#projects" class="btn">查看作品</a>
+          <a href="#contact" class="btn btn-outline">聯絡我</a>
+        </div>
       </div>
     </div>
+
+    <div class="info-grid">
+      <div class="info-card card-mustard">
+        <h3>Education</h3>
+        <p>國立臺北大學<br>歷史學系</p>
+      </div>
+      <div class="info-card card-dark">
+        <h3>Contact</h3>
+        <p>a0919874693@gmail.com<br>臺灣</p>
+      </div>
+      <div class="info-card card-dark">
+        <h3>技能方向</h3>
+        <p>前端網站開發<br>React 與 API 串接學習中</p>
+      </div>
+      <div class="info-card card-mustard">
+        <h3>求職方向</h3>
+        <p>前端工程師<br>網頁開發相關職缺</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contents 大字索引 -->
+  <section class="contents-banner">
+    <p class="eyebrow eyebrow-light">✦ Contents</p>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </section>
 
   <!-- Skills -->
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <h3>HTML5</h3>
-        <div class="bar"><span style="width:90%"></span>
-        </div>
+        <div class="bar"><span style="width:90%"></span></div>
       </div>
       <div class="skill-card">
         <h3>CSS3</h3>
-        <div class="bar"><span style="width:85%"></span>
-        </div>
+        <div class="bar"><span style="width:85%"></span></div>
       </div>
       <div class="skill-card">
         <h3>JavaScript</h3>
-        <div class="bar"><span style="width:80%"></span>
-        </div>
+        <div class="bar"><span style="width:80%"></span></div>
       </div>
       <div class="skill-card">
         <h3>Git / GitHub</h3>
-        <div class="bar">
-          <span style="width:75%"></span>
-        </div>
+        <div class="bar"><span style="width:75%"></span></div>
       </div>
     </div>
   </section>
+
+  <!-- 跑馬燈分隔 -->
+  <div class="marquee-banner" aria-hidden="true">
+    <div class="marquee-track">
+      <span>FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ </span>
+      <span>FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ FRONT-END DEVELOPER ✦ </span>
+    </div>
+  </div>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/running.jpg" alt="">
+
+    <div class="project-block">
+      <div class="project-media"><img src="images/running.jpg" alt="全國路跑賽事整合網站截圖"></div>
+      <div class="project-info">
+        <span class="project-num">01</span>
         <h3>全國路跑賽事整合網站</h3>
         <p>一頁式網站、賽事篩選、賽事圖卡、收藏功能、響應式設計。</p>
-        <div class="project-btns">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
+        <div class="tools-row">
+          <span class="tool-tag">HTML</span>
+          <span class="tool-tag">CSS</span>
+          <span class="tool-tag">JavaScript</span>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/hotel.jpg" alt="">
-        <h3>飯店訂房網站</h3>
-        <p>房型列表、日期選擇、總價計算、訂房功能。</p>
         <div class="project-btns">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="images/memory.jpg" alt="">
-        <h3>記憶翻牌遊戲</h3>
-        <p>計時器、動畫效果、分數系統。</p>
-        <div class="project-btns">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="images/hospital.jpg" alt="">
-        <h3>醫院叫號系統</h3>
-        <p>掛號、叫號、等待名單管理。</p>
-        <div class="project-btns">
-          <a href="#">Demo</a>
-          <a href="#">GitHub</a>
+          <a href="#" class="btn">Demo</a>
+          <a href="#" class="btn btn-outline">Figma</a>
         </div>
       </div>
     </div>
 
+    <div class="project-block">
+      <div class="project-media"><img src="image/hotel-home.png" alt="飯店訂房網站截圖"></div>
+      <div class="project-info">
+        <span class="project-num">02</span>
+        <h3>飯店訂房網站</h3>
+        <p>房型列表、日期選擇、總價計算、訂房功能。</p>
+        <div class="tools-row">
+          <span class="tool-tag">HTML</span>
+          <span class="tool-tag">CSS</span>
+          <span class="tool-tag">JavaScript</span>
+        </div>
+        <div class="project-btns">
+          <a href="https://Yi-Xuan-Zhang.github.io/hotel-booking/" class="btn">Demo</a>
+          <a href="https://github.com/Yi-Xuan-Zhang/hotel-booking" class="btn btn-outline">GitHub</a>
+          <a href="hotel.html" class="btn btn-outline">詳情</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-media"><img src="images/memory.jpg" alt="記憶翻牌遊戲截圖"></div>
+      <div class="project-info">
+        <span class="project-num">03</span>
+        <h3>記憶翻牌遊戲</h3>
+        <p>計時器、動畫效果、分數系統。</p>
+        <div class="tools-row">
+          <span class="tool-tag">JavaScript</span>
+          <span class="tool-tag">CSS Animation</span>
+        </div>
+        <div class="project-btns">
+          <a href="#" class="btn">Demo</a>
+          <a href="#" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-media"><img src="images/hospital.jpg" alt="醫院叫號系統截圖"></div>
+      <div class="project-info">
+        <span class="project-num">04</span>
+        <h3>醫院叫號系統</h3>
+        <p>掛號、叫號、等待名單管理。</p>
+        <div class="tools-row">
+          <span class="tool-tag">JavaScript</span>
+          <span class="tool-tag">LocalStorage</span>
+        </div>
+        <div class="project-btns">
+          <a href="https://yixuan123.github.io/hospital-queue/" class="btn">Demo</a>
+          <a href="#" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
+
+  <!-- Contact / Thank you -->
+  <section id="contact" class="contact">
+    <p class="eyebrow eyebrow-light">✦ Get in touch</p>
+    <h2 class="thankyou">一起合作吧</h2>
     <div class="contact-info">
       <p>Email：a0919874693@gmail.com</p>
       <p>GitHub：https://github.com/Yi-Xuan-Zhang</p>
     </div>
+    <a href="mailto:a0919874693@gmail.com" class="btn btn-lg">寄信給我</a>
   </section>
 
   <footer>
