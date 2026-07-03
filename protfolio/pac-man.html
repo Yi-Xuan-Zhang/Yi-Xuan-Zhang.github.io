@@ -1,0 +1,226 @@
+<!-- Case study hero -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張宜軒的作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">宜軒<span class="dot">.</span></div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" id="menu-btn" aria-label="開啟選單" aria-expanded="false">
+            ☰
+        </button>
+    </nav>
+    <header class="detail-hero">
+        <a href="index.html#projects" class="back-link">← 返回作品集</a>
+        <span class="tag">✦ Case Study 03</span>
+        <h1>PAC-MAN BAKERY 小精靈烘焙遊戲</h1>
+        <p class="detail-subtitle">
+            從純 CSS 動畫練習，升級成具備遊戲邏輯與互動機制的網頁小遊戲。
+        </p>
+    </header>
+    <!-- Overview meta -->
+    <section class="detail-overview">
+        <div class="info-grid">
+            <div class="info-card card-mustard">
+                <h3>角色</h3>
+                <p>UI 設計<br>前端開發</p>
+            </div>
+            <div class="info-card card-dark">
+                <h3>開發時間</h3>
+                <p>2 週<br>2026</p>
+            </div>
+            <div class="info-card card-dark">
+                <h3>使用工具</h3>
+                <p>HTML / CSS<br>JavaScript</p>
+            </div>
+            <div class="info-card card-mustard">
+                <h3>專案類型</h3>
+                <p>互動式網頁遊戲<br>JavaScript Game</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="hello">
+        <div class="hello-inner">
+            <div class="hello-text" style="max-width:900px;">
+                <p class="eyebrow">✦ Overview</p>
+                <h2 class="script">專案<em>簡介</em></h2>
+                <p>
+                    本專案最初的目標是練習 CSS Animation，
+                    使用純 HTML 與 CSS 製作出小精靈沿著固定路徑移動、
+                    自動吃掉麵包的動畫效果。
+                </p>
+                <p>
+                    完成動畫版本後，進一步思考如何將作品從展示型動畫，
+                    升級成真正能讓使用者操作的互動遊戲，因此重新設計整體架構，
+                    導入 JavaScript 控制角色移動、碰撞偵測、
+                    遊戲計分與時間管理等功能，
+                    最終完成一款具備完整遊戲流程的
+                    <strong>PAC-MAN BAKERY</strong>。
+                </p>
+            </div>
+        </div>
+    </section>
+     <!-- 跑馬燈分隔 -->
+    <div class="marquee-banner">
+        <div class="marquee-track">
+            <span>
+                PACMAN BAKERY ✦ PACMAN BAKERY ✦ PACMAN BAKERY ✦
+            </span>
+
+            <span>
+                PACMAN BAKERY ✦ PACMAN BAKERY ✦ PACMAN BAKERY ✦
+            </span>
+        </div>
+    </div>
+    <!-- Features -->
+    <section class="projects">
+        <h2>功能亮點</h2>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">01</span>
+                <h3>從動畫版升級為遊戲版</h3>
+                <p>
+                    原始版本利用 CSS Keyframes 讓小精靈依照固定路徑移動，
+                    麵包也會在指定時間自動消失。
+                    後續移除自動播放機制，
+                    改由 JavaScript 控制角色位置，
+                    讓玩家能夠親自操作並完成遊戲。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">CSS Animation</span>
+                    <span class="tool-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">02</span>
+                <h3>玩家操作系統</h3>
+                <p>
+                    支援鍵盤方向鍵、WASD 操作，
+                    同時提供滑鼠點擊移動與手機版 Touch 控制，
+                    讓遊戲在桌機與行動裝置都能順利遊玩。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">Keyboard Event</span>
+                    <span class="tool-tag">Touch Event</span>
+                    <span class="tool-tag">Responsive</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">03</span>
+                <h3>碰撞偵測與計分系統</h3>
+                <p>
+                    透過 getBoundingClientRect() 實作碰撞偵測，
+                    當小精靈碰到麵包時會自動吃掉並增加分數，
+                    當所有食物被吃完後即獲得勝利。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">Collision Detection</span>
+                    <span class="tool-tag">Score System</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">04</span>
+                <h3>倒數計時器</h3>
+                <p>
+                    新增 60 秒挑戰模式，
+                    玩家必須在時間結束前吃完所有麵包，
+                    提升遊戲的緊張感與挑戰性。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">setInterval()</span>
+                    <span class="tool-tag">Game Timer</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">05</span>
+                <h3>鬼魂追逐模式</h3>
+                <p>
+                    加入 AI 鬼魂敵人，
+                    會持續朝玩家方向移動。
+                    若鬼魂碰觸到小精靈，
+                    遊戲即結束，
+                    增加遊戲性與挑戰難度。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">Enemy AI</span>
+                    <span class="tool-tag">Path Following</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-block">
+            <div class="project-info">
+                <span class="project-num">06</span>
+                <h3>音效與重新開始機制</h3>
+                <p>
+                    利用 Web Audio API 製作吃到麵包與勝利提示音，
+                    並加入重新開始按鈕，
+                    讓玩家能夠快速重新挑戰。
+                </p>
+                <div class="tools-row">
+                    <span class="tool-tag">Web Audio API</span>
+                    <span class="tool-tag">Restart System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hello">
+        <div class="hello-inner">
+            <div class="hello-text" style="max-width:900px;">
+                <p class="eyebrow">✦ Learning</p>
+                <h2 class="script">專案<em>收穫</em></h2>
+                <p>
+                    這次專案最大的收穫，
+                    是學習如何將一個純動畫作品，
+                    逐步拆解並重構成真正具有互動性的遊戲。
+                </p>
+                <p>
+                    在開發過程中，
+                    練習了事件監聽、
+                    碰撞偵測、
+                    計時器控制、
+                    遊戲狀態管理、
+                    響應式設計以及程式模組化思維，
+                    也更加理解 JavaScript 在前端互動開發中的應用方式。
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    © 2026 張宜軒 Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
