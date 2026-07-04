@@ -29,7 +29,7 @@
     <a href="index.html#projects" class="back-link">← 返回作品集</a>
     <span class="tag">✦ Case Study 02</span>
     <h1>飯店訂房網站</h1>
-    <p class="detail-subtitle">房型瀏覽、日期選擇、總價計算、訂房送出的一站式訂房流程</p>
+    <p class="detail-subtitle">從房型瀏覽、日期選擇、總價計算到訂房送出的一站式流程，優化後加入「登機證」與「明信片」的視覺語言，融合台灣在地文化體驗</p>
   </header>
 
   <!-- Overview meta -->
@@ -41,7 +41,7 @@
       </div>
       <div class="info-card card-dark">
         <h3>開發時間</h3>
-        <p>2 週<br>2026</p>
+        <p>2 週開發 ＋ 1 週優化<br>2026</p>
       </div>
       <div class="info-card card-dark">
         <h3>使用工具</h3>
@@ -57,7 +57,7 @@
 
   <!-- Cover image -->
   <section class="detail-cover">
-    <img src="image/hotel-home.png" alt="飯店訂房網站首頁截圖">
+    <img src="image/hotelbooking-home.png" alt="飯店訂房網站首頁截圖">
   </section>
 
   <!-- Overview text -->
@@ -67,9 +67,18 @@
         <p class="eyebrow">✦ Overview</p>
         <h2 class="script">專案<em>簡介</em></h2>
         <p>
-          這個專案模擬真實訂房網站的核心流程，訪客可以瀏覽不同房型、
-          選擇入住與退房日期、即時看到總價計算結果，並完成訂房送出。
-          目標是練習表單邏輯、日期運算與資料驗證，同時做出符合實際使用情境的響應式介面。
+          這個專案最初是為了模擬真實訂房網站的核心流程而做：訪客可以瀏覽不同房型、
+          選擇入住與退房日期、即時看到總價計算結果，並完成訂房送出，練習表單邏輯、
+          日期運算與資料驗證，做出符合實際使用情境的響應式介面。
+          <br><br>
+          完成第一版之後，我常常想像自己有一天也想開一間屬於自己的民宿，也希望能有更多人透過這樣的介面認識台灣、
+          喜歡上台灣。於是我把整個介面重新設計了一次：搜尋列改成「登機證」造型，
+          虛線分隔線與兩側圓形缺口，讓查房這件事多了一點出發旅行的儀式感；
+          房型卡片改成帶有郵戳徽章的「明信片」質感；最重要的房型詳情彈窗，
+          則改版成完整的登機證雙聯設計——左邊是房型故事，右邊票根放評價、可入住人數與房價，
+          並加上一欄「管家在地小提醒」，把台灣人情味具體地寫進每一個房型裡。
+          我也新增了「在地探索」區塊，用明信片的方式介紹九份、日月潭、太魯閣、阿里山，
+          附上一句在地管家的真心話，希望旅人在訂房的那一刻，就已經開始想念台灣。
         </p>
       </div>
     </div>
@@ -78,8 +87,8 @@
   <!-- 跑馬燈分隔 -->
   <div class="marquee-banner" aria-hidden="true">
     <div class="marquee-track">
-      <span>HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ </span>
-      <span>HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ HOTEL BOOKING ✦ </span>
+      <span>HOTEL BOOKING ✦ TAIWAN MOMENTS ✦ HOTEL BOOKING ✦ TAIWAN MOMENTS ✦ </span>
+      <span>HOTEL BOOKING ✦ TAIWAN MOMENTS ✦ HOTEL BOOKING ✦ TAIWAN MOMENTS ✦ </span>
     </div>
   </div>
 
@@ -88,40 +97,57 @@
     <h2>功能亮點</h2>
 
     <div class="project-block">
-      <div class="project-media"><img src="image/hotel-home.png" alt="房型列表畫面"></div>
+      <div class="project-media"><img src="image/room-rates.png" alt="登機證造型搜尋票卡與明信片房型卡片"></div>
       <div class="project-info">
         <span class="project-num">01</span>
-        <h3>房型列表</h3>
-        <p>依房型分類呈現卡片式列表，每張卡片顯示房型圖片、坪數、可容納人數與每晚價格，方便訪客快速比較。</p>
+        <h3>登機證搜尋票卡 ＋ 明信片房型卡</h3>
+        <p>首頁搜尋列改為登機證造型，用虛線分隔入住日期、退房日期與人數，兩側加上圓形缺口模擬票根撕開的細節；房型改以台灣風景命名（日月潭、九份、太魯閣、阿里山），卡片右上角貼上熱門／親子友善／尊爵臻選的郵戳徽章，呈現明信片般的溫度。</p>
         <div class="tools-row">
           <span class="tool-tag">CSS Grid</span>
           <span class="tool-tag">Responsive</span>
+          <span class="tool-tag">CSS 偽元素造型</span>
         </div>
       </div>
     </div>
 
     <div class="project-block">
-      <div class="project-media"><img src="image/hotel-home.png" alt="日期選擇與總價計算畫面"></div>
+      <div class="project-media"><img src="image/" alt="日期選擇與總價計算畫面"></div>
       <div class="project-info">
         <span class="project-num">02</span>
-        <h3>日期選擇與總價計算</h3>
-        <p>訪客選擇入住與退房日期後，系統自動計算住宿天數與總價，並即時顯示在畫面上，避免訪客手動換算。</p>
+        <h3>日期選擇、總價計算與表單驗證</h3>
+        <p>訪客選擇入住與退房日期後，系統自動計算住宿天數與總價並即時顯示；送出前檢查必填欄位與日期邏輯（退房日期需晚於入住日期），錯誤時提示訪客修正，確保資料正確才完成訂房。</p>
         <div class="tools-row">
           <span class="tool-tag">JavaScript Date</span>
           <span class="tool-tag">即時運算</span>
+          <span class="tool-tag">表單驗證</span>
         </div>
       </div>
     </div>
 
     <div class="project-block">
-      <div class="project-media"><img src="image/hotel-home.png" alt="訂房表單送出畫面"></div>
+      <div class="project-media"><img src="image/booking-detail.png" alt="房型詳情彈窗：登機證雙聯設計"></div>
       <div class="project-info">
         <span class="project-num">03</span>
-        <h3>訂房送出與驗證</h3>
-        <p>表單送出前檢查必填欄位與日期邏輯（退房日期需晚於入住日期），並在錯誤時提示訪客修正，確保資料正確才送出。</p>
+        <h3>房型詳情彈窗：登機證雙聯設計</h3>
+        <p>這次優化的重點。彈窗改成完整的登機證雙聯版面：左側是房型照片、故事化描述與設施標籤，右側票根呈現評價、可入住人數與房價，中間用虛線＋圓形缺口＋條碼裝飾做出撕票感；並新增「管家在地小提醒」欄位，讓旅人在做決定前，就先感受到一句貼心的在地提醒。</p>
         <div class="tools-row">
-          <span class="tool-tag">表單驗證</span>
-          <span class="tool-tag">錯誤提示</span>
+          <span class="tool-tag">Modal 重構</span>
+          <span class="tool-tag">CSS 缺口效果</span>
+          <span class="tool-tag">UX 微文案</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-media"><img src="image/taiwan-moments.png" alt="在地探索：台灣文化明信片牆"></div>
+      <div class="project-info">
+        <span class="project-num">04</span>
+        <h3>在地探索：融入台灣文化體驗</h3>
+        <p>新增「在地探索」明信片牆，用九份、日月潭、太魯閣、阿里山四個角落，搭配一句由管家角色寫下的真心話，把「想讓更多人認識台灣」的初衷，實際變成介面上看得到、讀得到的內容，而不只是一句行銷標語。</p>
+        <div class="tools-row">
+          <span class="tool-tag">內容設計</span>
+          <span class="tool-tag">在地文化敘事</span>
+          <span class="tool-tag">品牌調性</span>
         </div>
       </div>
     </div>
